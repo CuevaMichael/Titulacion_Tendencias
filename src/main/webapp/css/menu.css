@@ -1,0 +1,88 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background: #F1F2B5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; /* Texto blanco */
+    margin: 0; /* Elimina el margen del cuerpo */
+    font-family: 'Consolas', sans-serif; /* Fuente del texto */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    border:  #00B4DB; /* fallback for old browsers */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el borde en el ancho total del contenedor */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    height: 100vh; /* Altura del contenedor igual al 100% de la altura de la ventana */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Alinea el texto al centro */
+    margin: 0 auto; /* Margen automático para centrar el contenedor horizontalmente */
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: #fff; /* Cambiar a negro */
+}
+
+/* Estilo común para los botones */
+.btn-primary,
+.btn-secondary,
+.custom-btn {
+    width: 150px; /* Ajusta el valor según tus necesidades */
+    text-align: center; /* Centra el texto dentro del botón */
+    padding: 10px; /* Añade un espaciado interno para mejorar la apariencia */
+    margin: 5px; /* Añade un margen entre botones */
+    display: inline-block; /* Asegura que los botones se comporten como elementos en línea con dimensiones especificadas */
+    transition: background-color 0.5s, border-color 0.5s, transform 0.5s, color 0.5s; /* Transición para suavizar cambios */
+}
+
+/* Estilo para el botón primario */
+.btn-primary {
+    background: linear-gradient(to bottom, #135058 , #fff); /* Degradado de blanco a negro */
+    color: #135058; /* Texto blanco */
+    border: 1px solid #000; /* Borde negro */
+}
+
+.btn-primary:hover,
+.custom-btn:hover {
+    background: linear-gradient(to bottom, #135058 , #fff); /* Cambia el fondo a un degradado de negro a gris oscuro al pasar el mouse */
+    border-color: #135058; /* Cambia el borde a gris oscuro al pasar el mouse */
+    transform: scale(1.12); /* Aumenta el tamaño en un 12% al pasar el cursor */
+    color: #135058; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+/* Estilo para el botón secundario (Cerrar sesión) */
+.btn-secondary {
+    background: linear-gradient(to bottom, #135058, #fff   ); /* Degradado de blanco a negro */
+    color: #135058; /* Texto blanco */
+    border: 1px solid #000; /* Borde negro */
+}
+
+.btn-secondary:hover,
+.custom-btn:hover {
+    background: linear-gradient(to bottom, #fff, #135058); /* Cambia el fondo a un degradado de beige a negro al pasar el mouse */
+    border-color: #000; /* Cambia el borde a negro al pasar el mouse */
+    transform: scale(1.12); /* Aumenta el tamaño en un 12% al pasar el cursor */
+    color: #135058; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+
+/* Estilo para las imágenes de los botones */
+img {
+    filter: invert(100%); /* Invertir colores de la imagen (hacerla blanca) */
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo adicional para la imagen fuera del botón */
+.img-outside-button {
+    max-width: 10%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+
